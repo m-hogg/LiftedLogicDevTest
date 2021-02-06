@@ -1,0 +1,42 @@
+<!-- Mobile navbar -->
+<div class="mobile-navbar">
+    <img src="./assets/logo/SVGS/SRrecordings.svg" alt="company logo" height="30px"></img>
+    <img src="./assets/Icons/SVGS/bars.svg" alt="bars" height="30px" id="bars-icon"></img>
+
+    <div class="sidebar">
+        <img src="./assets/Icons/SVGS/times.svg" alt="times_logo" height="30px" id="close-icon"></img>
+        <a>
+            <img src="./assets/Icons/SVGS/Home.svg" alt="home_icon">
+            Home
+        </a>
+        <a>
+            <img src="./assets/Icons/SVGS/records.svg" alt="records_icon">
+            Records
+        </a>
+        <a>
+            <img src="./assets/Icons/SVGS/music.svg" alt="">
+            Music
+        </a>
+        <a>
+            <img src="./assets/Icons/SVGS/artists.svg" alt="">
+            Artists
+        </a>
+        <a>
+            <img src="./assets/Icons/SVGS/concerts.svg" alt="">
+            Concerts
+        </a>
+        <button>Sign Up</button>
+    </div>
+
+    <script>
+        $(document).ready(() => {
+            $("#bars-icon").on('click', () => {
+                $('.sidebar').width('100%')
+            })
+
+            $("#close-icon").on('click', () => {
+                $('.sidebar').width(0)
+            })
+        })
+    </script>
+</div>
