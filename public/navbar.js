@@ -1,6 +1,6 @@
 const getNavbar = function () {
     let navEl = $('#nav')
-    if($(window).width() <= 600) {
+    if($(window).width() <= 920) {
         navEl.load('./navbar-mobile.html')
     } else {
         navEl.load('./navbar.html')
