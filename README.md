@@ -1,5 +1,7 @@
 # LiftedLogicDevTest
 
+# Link to deployed site: https://lifted-logic-dev-test.vercel.app/
+
 Here's the challenge:
 Your task is to build the frontend for the given design. We’ll provide you with all of the assets you’ll need to accomplish this task. Please keep modern code practices and techniques in mind!
 
