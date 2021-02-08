@@ -56,6 +56,7 @@ body {
     background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     transition: 0.5s;
     top: 0;
     left: 0;
@@ -89,8 +90,19 @@ body {
 }
 
 #close-icon {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     padding-right: 16px;
+    padding-top: 16px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 200;
 }
 
 .top-navbar {
@@ -284,6 +296,10 @@ body {
     text-align: center;
 }
 
+#new-releases h2 {
+    color: #001D5D;
+}
+
 #new-releases #nav-buttons {
     display: flex;
     justify-content: center;
@@ -339,4 +355,173 @@ body {
 
 .info-div h5 {
     color: #68C242;
+}
+
+#contact {
+    display: flex;
+    /* height: 90vh; */
+    /* overflow: hidden; */
+    margin-top: -5px;
+    background-color: #F6F6F6;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+    #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact img {
+        width: 85%;
+        height: auto;
+    }
+
+    .contact-form {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #contact img {
+        width: 40%;
+        height: auto;
+    }
+
+    .contact-form {
+        width: 40%;
+        margin-right: auto;
+    }
+}
+
+.contact-form {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-form .typography-header {
+    color: #001D5D;
+}
+
+.content-form .gray-text {
+    color: #525252;
+}
+
+.contact-form span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+
+.contact-form input, select {
+    width: 30%;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+    border: none;
+}
+
+.contact-form select {
+    background-image: url('./assets/Icons/PNGs/dropdown_triangle.png');
+    width: 35%;
+}
+
+.contact-form textarea {
+    background-color: lightgrey;
+    border: none;
+    width: 100%;
+    height: auto;
+    font-family: Karla;
+    padding: 15px;
+}
+
+.contact-form button {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: #D9F0D0;
+    color: #68C242;
+    width: 150px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #68C242;
+    color: #D9F0D0;
+}
+
+#links {
+    background-color: #001D5D;
+    display: flex;
+    color:white;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    #links {
+        flex-wrap: wrap;
+        padding: 2%;
+    }
+    #links div {
+        padding: 20px;
+    }
+}
+
+#links div {
+    display: flex;
+    flex-direction: column;
+}
+
+#links h6 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#links span {
+    margin-bottom: 10px;
+    color: lightgrey;
+}
+
+#links img {
+    margin-bottom: 10px;
+}
+
+#links .address {
+    color: white;
+}
+
+#footer {
+    background-color: #001D5D;
+}
+
+#footer .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer img {
+    padding-right: 15px;
+    
+}
+
+.legal {
+    margin-left: 30px;
+    color: white;
+    display: flex;
+}
+.legal h4 {
+    margin-right: 20px;
+}
+
+#footer .social-icons {
+    margin-right:20px;
 }
