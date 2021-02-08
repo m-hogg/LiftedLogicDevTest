@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css"/>
     <title>Synder Recordings</title>
 </head>
 <body>
@@ -47,10 +47,57 @@
     </div>
 
     <!-- New Releases -->
-    <div></div>
+    <div id="new-releases">
+        <h2 class="typography-header">New Releases</h2>
+        <h3 class="typography-body">New albums every single month, check out the newest and best from Snyder Recording artist, now available on Apple Music and Spotify.</h3>
+        <div class="carousel">
+            <div>
+                <div class="new-track">
+                    <div class="album-div">
+                        <img src="./assets/Images/image4.png" alt="album_cover"></img>
+                    </div>
+                    <div class="info-div">
+                        <h4 class="typography-header-two">Trapsoul</h4>
+                        <h5 class="typography-header-three">Bryson Tiller</h5>
+                        <span class="typography-body">Bryson Djuang Tiller, is an American singer, songwriter, and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape Killer Instinct Vol.1.</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="new-track">
+                    <div class="album-div">
+                        <img src="./assets/Images/image4.png" alt="album_cover"></img>
+                    </div>
+                    <div class="info-div">
+                        <h4 class="typography-header-two">Trapsoul</h4>
+                        <h5 class="typography-header-three">Bryson Tiller</h5>
+                        <span class="typography-body">Bryson Djuang Tiller, is an American singer, songwriter, and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape Killer Instinct Vol.1.</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="new-track">
+                    <div class="album-div">
+                        <img src="./assets/Images/image4.png" alt="album_cover"></img>
+                    </div>
+                    <div class="info-div">
+                        <h4 class="typography-header-two">Trapsoul</h4>
+                        <h5 class="typography-header-three">Bryson Tiller</h5>
+                        <span class="typography-body">Bryson Djuang Tiller, is an American singer, songwriter, and rapper. Born in Louisville, Kentucky, he started his career in 2011, releasing the debut mixtape Killer Instinct Vol.1.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav-buttons">
+            <img id="prev-nav" src="./assets/Icons/SVGs/left_controller.svg" alt=""></img>
+            <img id="next-nav" src="./assets/Icons/SVGs/right_controller.svg" alt=""></img>
+        </div>
+    </div>
 
     <!-- Map -->
-    <div></div>
+    <div>
+        <iframe width="100%" height="auto" frameborder="0" style="border:0; min-height: 500px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ2Z3302brwIcRfnp2abocpac&key=AIzaSyCd9eiIVCHoYHllLijNae-mx1RYY1FSTzs" allowfullscreen></iframe> 
+    </div>
 
     <!-- Contact -->
     <div></div>
@@ -65,8 +112,21 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-          $('.your-class').slick({});
+          $('.carousel').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            arrows: false,
+            variableWidth: true
+          });
         });
+        $('#prev-nav').on('click', () => {
+            $('.carousel').slick('slickPrev')
+        })
+        $('#next-nav').on('click', () => {
+            $('.carousel').slick('slickNext')
+        })
     </script>
 </body>
 </html>

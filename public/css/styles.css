@@ -1,3 +1,41 @@
+.typography-hero {
+    font-weight: bold;
+    font-size: 65px;
+    letter-spacing: 0.73px;
+    line-height: 76px;
+}
+
+.typography-header {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.typography-header-two {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.typography-header-three {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.typography-button {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.typography-body {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+}
+
 body {
     font-family: Karla;
     margin: 0;
@@ -237,3 +275,68 @@ body {
     }
 }
 
+#new-releases {
+    padding-top: 50px;
+    background-color: #F6F6F6;
+}
+
+#new-releases h2, h3 {
+    text-align: center;
+}
+
+#new-releases #nav-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+
+#new-releases #nav-buttons img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.new-track {
+    display: flex;
+}
+
+.slick-slide {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .slick-slide {
+        width: 95vw
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .slick-slide {
+        width: 60vw 
+    }
+}
+
+.album-div {
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+
+}
+
+.album-div img {
+    padding: 0 20px 0 20px;
+}
+
+.info-div {
+    background-color: white;
+    padding: 20px;
+}
+
+.info-div h4, h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.info-div h5 {
+    color: #68C242;
+}
